@@ -1,0 +1,30 @@
+/** MAIN SECTION  */
+.main-section {
+  background-image: url("../../asset/salon-2589649_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  width: 100%;
+  height: 100vh;
+  background-blend-mode: darken;
+  padding: 100px 60px 30px 60px;
+}
+.main-section-content {
+  border: #ffffff solid 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-section-content img {
+  width: 350px;
+  height: 350px;
+}
+.main-section-content h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 300;
+}

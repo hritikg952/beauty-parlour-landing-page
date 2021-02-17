@@ -1,0 +1,22 @@
+/** PHYLOSOPHY SECTION  */
+.phylosophy-section {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+.phylosophy-section h1 {
+  color: #a53732;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.phylosophy-section p {
+  margin-bottom: 30px;
+  line-height: 32px;
+  color: #3c3c3c;
+  font-weight: 500;
+  font-family: "open sans", sans-serif;
+}

@@ -1,0 +1,138 @@
+/** HEADER  */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 37px 60px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 2;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+/* .fullscreen-menu {
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #a53732;
+  color: #ffffff;
+  z-index: 3;
+  padding: 37px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.fullscreen-menu .hamburger-fs-menu-container {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+} */
+.header > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header > div > button {
+  margin-left: 20px;
+}
+.hamburger-menu-container {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.bar1,
+.bar2,
+.bar3,
+.fs-bar1,
+.fs-bar2,
+.fs-bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1,
+.fs-bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2,
+.fs-bar2 {
+  opacity: 0;
+}
+
+.change .bar3,
+.fs-bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* condition  */
+.header.active {
+  background-color: #ffffff;
+  color: #3c3c3c;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.14);
+}
+
+.bar1.active,
+.bar2.active,
+.bar3.active {
+  background-color: #3c3c3c;
+}
+.icon-button.active {
+  color: #3c3c3c;
+  border-color: #3c3c3c;
+}
+
+.fs-container {
+  height: 100vh;
+  width: 0;
+  background-color: #c04c46;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-y: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #ffffff;
+  z-index: 3;
+  text-align: center;
+  transition: 0.4s;
+}
+.fs-container.active {
+  width: 100%;
+}
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.menu ul {
+  list-style: none;
+}
+.menu ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 100px;
+  font-weight: 500;
+  transition: 0.2s;
+  font-family: "Merriweather", serif;
+}
+.menu ul a:hover {
+  color: #3c3c3c;
+}
